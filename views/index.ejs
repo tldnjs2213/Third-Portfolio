@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Paul Bassett</title>
+
+		<!-- XEIcon -->
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+
+		<!-- fontAwesome -->
+		<script src="https://kit.fontawesome.com/351165cd5b.js" crossorigin="anonymous"></script>
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="../img/favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="../img/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- jQuery -->
+		<script src="../js/jquery-3.6.0.min.js"></script>
+
+		<link rel="stylesheet" href="../css/index.css" />
+	</head>
+	<body>
+		<div class="portfolio_info_box">
+			<div class="portfolio_info_top">
+				This page was created for portfolio purposes. This kiosk was made based on 700&lowast;900px
+			</div>
+			<div class="portfolio_info_bottom">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</div>
+		</div>
+		<div class="wrap">
+			<!-- <div class="a">This page was created for portfolio purposes. This kiosk was made based on 700&lowast;900px</div> -->
+			<!-- <div class="b">본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</div> -->
+			<div class="rgba_wrap"></div>
+
+			<!-- container_main_start -->
+			<section class="container_main">
+				<div class="touch_box">"화면을 터치해주세요."</div>
+			</section>
+			<!-- container_main_end -->
+
+			<section class="container_select">
+				<header>
+					<div class="slide_box">
+						<img class="header_banner" src="../img/banner_0.jpg" alt="배너0" />
+						<img class="header_banner" src="../img/banner_1.jpg" alt="배너1" />
+						<img class="header_banner" src="../img/banner_2.jpg" alt="배너2" />
+						<img class="header_banner" src="../img/banner_3.jpg" alt="배너3" />
+						<img class="header_banner" src="../img/banner_4.jpg" alt="배너4" />
+					</div>
+					<img class="header_logo" src="../img/paul_logo_3.png" alt="헤더로고" />
+				</header>
+
+				<nav>
+					<ul class="header_nav">
+						<li class="selected">신메뉴</li>
+						<li>커피</li>
+						<li>음료</li>
+						<li>푸드</li>
+						<li>아이스크림</li>
+						<li class="selected_underline"></li>
+					</ul>
+				</nav>
+
+				<div class="menu_area">
+					<div class="menu_box item_new"></div>
+					<div class="menu_box item_coffee"></div>
+					<div class="menu_box item_beverage"></div>
+					<div class="menu_box item_food"></div>
+					<div class="menu_box item_ice_cream"></div>
+				</div>
+
+				<div class="pay_information">
+					<div class="pay_area">
+						<div class="coffee_footer_area">
+							<div class="coffee_footer_left">
+								<div class="pay_head">주문내역</div>
+								<ul class="coffee_list"></ul>
+								<div class="footer_box_area">
+									<div class="footer_box footer_left">
+										<div class="inner_left">총수량:</div>
+										<div class="inner_right">0</div>
+									</div>
+									<div class="footer_box footer_right">
+										<div class="inner_left">총금액:</div>
+										<div class="inner_right">0</div>
+									</div>
+								</div>
+							</div>
+							<div class="coffee_footer_right">
+								<div class="pay_reset_box">
+									<div class="reset_count">120</div>
+									<button class="pay_reset_btn">초기화</button>
+								</div>
+								<button class="pay_right_area">주문하기</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss -->
+				<!-- <div class="option_design_bg"> -->
+				<div class="option_design">
+					<h2>
+						<span class="product_name"></span>
+						<span class="option_price"></span>
+					</h2>
+					<ul>
+						<li>
+							<span>얼음</span>
+							<div class="figure_box">
+								<figure>
+									<img src="../img/ice_0.png" alt="아이스0" />
+									<figcaption>
+										<button class="ice_select">보통</button>
+									</figcaption>
+								</figure>
+								<figure>
+									<img src="../img/ice_1.png" alt="아이스1" />
+									<figcaption>
+										<button class="option_button ice_select">적게</button>
+									</figcaption>
+								</figure>
+								<figure>
+									<img src="../img/ice_2.png" alt="아이스2" />
+									<figcaption>
+										<button class="option_button ice_select">많게</button>
+									</figcaption>
+								</figure>
+							</div>
+						</li>
+						<li>
+							<span>샷</span>
+							<div class="figure_box">
+								<figure>
+									<img src="../img/shot_0.png" alt="샷0" />
+									<figcaption>
+										<button class="option_button shot_select">기본</button>
+									</figcaption>
+								</figure>
+								<figure>
+									<img src="../img/shot_1.png" alt="샷1" />
+									<figcaption>
+										<button class="option_button shot_select">1샷</button>
+									</figcaption>
+								</figure>
+								<figure>
+									<img src="../img/shot_2.png" alt="샷2" />
+									<figcaption>
+										<button class="shot_select">2샷</button>
+									</figcaption>
+								</figure>
+							</div>
+						</li>
+						<li>
+							<span>사이즈</span>
+							<div class="figure_box">
+								<figure>
+									<img src="../img/size_1.png" alt="사이즈1" />
+									<figcaption>
+										<button class="option_button size_select">스탠다드</button>
+									</figcaption>
+								</figure>
+								<figure>
+									<img src="../img/size_0.png" alt="사이즈0" />
+									<figcaption>
+										<button class="option_button size_select">그랜드</button>
+									</figcaption>
+								</figure>
+							</div>
+						</li>
+						<li>
+							<span>당도</span>
+							<div class="figure_box">
+								<figure>
+									<img src="../img/syrup_0.png" alt="시럽0" />
+									<figcaption>
+										<button class="option_button sugar_select">보통</button>
+									</figcaption>
+								</figure>
+								<figure>
+									<img src="../img/syrup_1.png" alt="시럽1" />
+									<figcaption>
+										<button class="option_button sugar_select">달게</button>
+									</figcaption>
+								</figure>
+								<figure>
+									<img src="../img/syrup_2.png" alt="시럽2" />
+									<figcaption>
+										<button class="sugar_select">더 달게</button>
+									</figcaption>
+								</figure>
+							</div>
+						</li>
+						<li>
+							<span>매장 / 포장</span>
+							<div class="figure_box">
+								<figure>
+									<img src="../img/store.png" alt="매장" />
+									<figcaption>
+										<button class="option_button cup_select">매장</button>
+									</figcaption>
+								</figure>
+								<figure>
+									<img src="../img/take_out.png" alt="포장" />
+									<figcaption>
+										<button class="option_button cup_select">포장</button>
+									</figcaption>
+								</figure>
+							</div>
+						</li>
+					</ul>
+
+					<div class="option_footer">
+						<button>이전</button>
+						<button>담기</button>
+					</div>
+				</div>
+				<!-- </div> -->
+
+				<div class="option_show">
+					<ul>
+						<li><span>얼음: </span><span class="option_check"></span></li>
+						<li><span>샷: </span><span class="option_check"></span></li>
+						<li><span>사이즈: </span><span class="option_check"></span></li>
+						<li><span>당도: </span><span class="option_check"></span></li>
+						<li><span>매장 / 포장: </span><span class="option_check"></span></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- 주문내역창 -->
+			<section class="container_order">
+				<header>
+					<div class="prev_btn"><i class="xi-backspace xi-2x"></i></div>
+					<img class="header_logo" src="../img/paul_logo_3.png" alt="헤더로고" />
+				</header>
+
+				<div class="container_list_area">
+					<h2>주문내역</h2>
+
+					<div class="order_list_box">
+						<div class="order_list_head">
+							<div class="order_menu">메뉴</div>
+							<div class="order_count">수량</div>
+							<div class="order_money">가격</div>
+						</div>
+						<ul></ul>
+					</div>
+
+					<ul class="total_area">
+						<li class="point_display">포인트사용: <span class="now_use_point">0</span></li>
+						<li>총금액: <span class="result_money">0</span></li>
+					</ul>
+
+					<h2>결제 방법</h2>
+
+					<div class="pay_area">
+						<button class="pay_box"><i class="fa-solid fa-credit-card fa-3x"></i>신용카드</button>
+						<button class="pay_box"><i class="fa-solid fa-coins fa-3x"></i>포인트 신규/결제</button>
+					</div>
+				</div>
+
+				<!-- 포인트 적립 팝업 -->
+				<div class="point_save_box">
+					<div class="point_save_text_box">
+						<span class="point_save_text"> 포인트를 적립하시겠습니까? </span>
+						<div class="btn_box">
+							<button class="close_btn">아니요</button>
+							<button class="add_point_btn">확인</button>
+						</div>
+					</div>
+				</div>
+
+				<!-- 결제페이지 -->
+				<div class="payment_box">
+					<img class="card_charge_img" src="../img/credit_card.png" alt="카드결제이미지" />
+					<div class="text_box">
+						<div class="charge_text">
+							<span>"결제하실 신용카드를<br />아래의 위치에 넣어주세요."</span>
+						</div>
+						<div class="small_charge_text">
+							<span>신용카드 결제가 완료될 때까지 카드를 빼지마세요.</span>
+						</div>
+					</div>
+					<div class="previous_btn">
+						<div class="card_box_btn">이전</div>
+						<div class="card_box_btn">결제</div>
+					</div>
+				</div>
+
+				<!-- 영수증 출력 페이지 -->
+
+				<div class="order_list_receipt_box">
+					<h2>주문내역</h2>
+
+					<div class="order_list_area">
+						<div class="order_list_receipt_text">
+							<div class="order_list_head">
+								<div class="order_menu">메뉴</div>
+								<div class="order_count">수량</div>
+								<div class="order_money">가격</div>
+							</div>
+							<ul></ul>
+							<div class="result_point_box">
+								<div class="result_point receive_point"></div>
+								<div class="result_point save_point"></div>
+							</div>
+						</div>
+
+						<ul class="total_area">
+							<li class="point_display">포인트사용: <span class="now_use_point2">0</span></li>
+							<li>총금액: <span class="result_money2">0</span></li>
+						</ul>
+
+						<h3 class="answer_question">영수증을 출력하시겠습니까?</h3>
+					</div>
+
+					<div class="answer_btn_area">
+						<button class="answer_box">아니오</button>
+						<button class="answer_box">예</button>
+					</div>
+				</div>
+
+				<!-- 휴대폰 번호 입력 페이지 -->
+
+				<div class="coupon_input_box">
+					<h2>휴대폰 번호 입력</h2>
+					<div class="number_area">
+						<article class="number_visible"></article>
+						<article class="test_number">TEST NUMBER: 010-7777-7777</article>
+						<article class="number_input_box">
+							<div>1</div>
+							<div>2</div>
+							<div>3</div>
+							<div>4</div>
+							<div>5</div>
+							<div>6</div>
+							<div>7</div>
+							<div>8</div>
+							<div>9</div>
+							<div>010</div>
+							<div>0</div>
+							<div><i class="xi-backspace"></i></div>
+						</article>
+					</div>
+					<div class="confirmation_box">
+						<button class="select_btn">취소</button>
+						<button class="select_btn">확인</button>
+					</div>
+				</div>
+
+				<!-- 포인트 사용페이지 -->
+
+				<div class="point_detailed">
+					<div class="point_detailed_head">포인트 내역</div>
+					<article class="point_info_box">
+						<div class="point_accumulation_box">
+							<span>누적 포인트&nbsp;&nbsp;&nbsp;:</span>
+							<div class="accumulation_point"></div>
+						</div>
+						<div class="use_point_box">
+							<span>사용 포인트&nbsp;&nbsp;&nbsp;:</span>
+							<div class="use_point"></div>
+							<div class="point_btn_box">
+								<i class="xi-minus-min point_minus_btn"></i>
+								<i class="xi-plus-min point_plus_btn"></i>
+							</div>
+						</div>
+						<div class="residual_point_box">
+							<span>잔여 포인트&nbsp;&nbsp;&nbsp;:</span>
+							<div class="residual_point"></div>
+						</div>
+					</article>
+					<div class="confirmation_box">
+						<button class="select_btn">적립하기</button>
+						<button class="select_btn">사용하기</button>
+					</div>
+				</div>
+
+				<!-- 신규회원 -->
+				<div class="new_membership_box">
+					<div class="new_membership_text_box">
+						<span class="welcome_new_membership_text">
+							신규회원이 되신 걸 환영합니다.<br />
+							카드결제 후 포인트가 적립됩니다.
+						</span>
+						<button class="identify_btn">확인</button>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<script src="../js/index.js"></script>
+	</body>
+</html>

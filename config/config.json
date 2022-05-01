@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "coffee",
+    "password": "kfN5ae@xSq&$t4W",
+    "database": "coffee",
+    "host": "lovizu.synology.me",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "coffee",
+    "password": "kfN5ae@xSq&$t4W",
+    "database": "coffee",
+    "host": "lovizu.synology.me",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "coffee",
+    "password": "kfN5ae@xSq&$t4W",
+    "database": "coffee",
+    "host": "lovizu.synology.me",
+    "dialect": "mysql"
+  }
+}
